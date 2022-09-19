@@ -1,0 +1,115 @@
+{
+    box-sizing: border-box;
+}
+.li-title{
+    position: relative;
+    top: 20px;
+    right: -406px;
+
+
+}
+
+
+
+html {
+    font: 1.2em/1.4 Arial, Helvetica, sans-serif;
+}
+
+body {
+    padding: 0 0 1em;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    border: 5px solid #000;
+    display: grid;
+    grid-template-areas:
+        "header header header header"
+
+}
+.header { grid-area: header; }
+
+.sidebar{
+    display: flex;
+    position: relative;
+    top: -16px;
+    right: -100px;
+
+
+
+}
+
+
+header ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5em 1em;
+    float:left;
+
+    grid-template-columns: 118.2fr 0.1fr 1.4fr 27.6fr;
+    grid-template-rows: 3.3fr 8.8fr 11.6fr 8.8fr;
+
+    grid-template-areas:
+          ". . . header-a";
+
+}
+.header-a { grid-area: header-a; }
+
+header .title {
+    font-size: 150%;
+    font-style: italic;
+    font-weight: bold;
+    padding: 1em;
+}
+
+main {
+    padding: 0 1em;
+}
+
+.cards {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    grid-gap: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+
+
+
+}
+
+.cards li {
+    border: 5px solid #000;
+    margin-bottom: 1em;
+    float:left;
+
+
+}
+
+.cards h2 {
+    background-color: #333;
+    color: #fff;
+    margin: 0;
+    padding: 0.5em 1em;
+}
+
+.cards .inner {
+    padding: 0.5em 1em;
+}
+
+
+
+.sidebar {
+    background-color: #333;
+    border: 5px solid #000;
+    padding: 0.5em 1em;
+    color: #fff;
+}
