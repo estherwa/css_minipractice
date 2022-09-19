@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Class </h2>
+
+
+<p id="demo"></p>
+<p id="demo2"></p>
+
+<script>
+    const cat ={
+
+            name : 'Bertie',
+                breed : 'Cymric',
+                color : 'white',
+
+        greeting() {
+            return  "Hello, said Bertie the Cymric.";
+        }
+    }
+
+    const cat2 ={
+
+        name : 'ESTHER',
+        breed : 'Cy',
+        color : 'BLACK',
+
+        greeting() {
+            return  "Hello, said Bertie the Cymric.";
+        }
+    }
+
+
+
+
+    document.getElementById("demo").innerHTML = cat.greeting();
+    document.getElementById("demo2").innerHTML = cat2.greeting();
+
+</script>
+
+</body>
+</html>

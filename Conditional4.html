@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <script>
+
+        let machineActive = true;
+        let pwd = 'cheese';
+
+        let machineResult;
+        let pwdResult;
+
+        if (machineActive) {
+            machineResult = 'Machine is active. You can login.'
+            pwdResult = pwd === 'cheese' ? 'Login successful.' : 'Password incorrect.'
+        } else {
+            machineResult = 'Machine is inactive';
+        }
+
+
+        section.innerHTML = ' ';
+        let para1 = document.createElement('p');
+        let para2 = document.createElement('p');
+
+        para1.textContent = machineResult;
+        para2.textContent = pwdResult;
+
+        section.appendChild(para1);
+        section.appendChild(para2);
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

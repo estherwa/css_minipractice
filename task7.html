@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Class </h2>
+
+
+<p id="demo"></p>
+<p id="demo2"></p>
+
+<script>
+  class Cat {
+    constructor(name, breed, color) {
+      this.catname = name;
+      this.breed= breed;
+      this.color=color;
+    }
+    greeting() {
+      return 'I have a ' + this.catname + ' ' + this.breed + ' ' +  this.color;
+    }
+  }
+
+
+  mycat = new Cat("cat1", "Mustang", "black");
+  mycat2 = new Cat("cat2", "Mus", "white");
+  document.getElementById("demo").innerHTML = mycat.greeting();
+  document.getElementById("demo2").innerHTML = mycat2.greeting();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>My  Page</h2>
+
+<script>
+    let season = 'summer';
+    let response;
+
+    if (season === 'summer') {
+        response = 'It\'s  nice  enjoy the sun!';
+    } else if(season === 'winter') {
+        response = 'Its cold!';
+    } else {
+        response = 'I don\'t know what the season is where you are.';
+    }
+
+
+
+
+  section.innerHTML = ' ';
+  let para1 = document.createElement('p');
+  para1.textContent = response;
+  section.appendChild(para1);
+
+
+</script>
+
+</body>
+</html>
